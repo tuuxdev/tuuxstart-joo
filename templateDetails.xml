@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+  <extension version="3.1" type="template" client="site">
+    <name>tuuxstart-joo</name>
+    <version>1.0.0</version>
+    <creationDate>Fecha</creationDate>
+    <author>Autor</author>
+    <authorEmail>email</authorEmail>
+    <copyright>MIT</copyright>
+    <description>Description</description>
+    <files>
+      <filename>gulpfile.js</filename>
+      <filename>package.json</filename>
+      <filename>README.md</filename>
+      <filename>component.php</filename>
+      <filename>error.php</filename>
+      <filename>index.php</filename>
+      <filename>favicon.png</filename>
+      <filename>template_preview.png</filename>
+      <filename>template_thumbnail.png</filename>
+      <filename>htaccess</filename>
+      <filename>LICENSE</filename>
+      <filename>templateDetails.xml</filename>
+      <folder>css</folder>
+      <folder>fonts</folder>
+      <folder>html</folder>
+      <folder>images</folder>
+      <folder>js</folder>
+      <folder>node_modules</folder>
+      <folder>sass</folder>
+    </files>
+
+    <positions>
+      <position></position>
+    </positions>
+  </extension>

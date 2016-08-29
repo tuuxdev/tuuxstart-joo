@@ -1,0 +1,39 @@
+/* ===========================================================================
+ * CORE
+ * ==========================================================================*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+::selection {
+	background: $theme-color;
+	text-shadow: none;
+	color: lighten($theme-color, 40%);
+}
+
+body {
+	font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $head-font;
+}
+
+a {
+	color: $theme-color;
+	transition: $main-transition;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darken($theme-color, 15%);
+	text-decoration: none;
+}
+
+/* ===========================================================================
+ * NEXT
+ * ==========================================================================*/
