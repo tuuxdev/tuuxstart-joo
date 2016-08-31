@@ -1,4 +1,4 @@
-### TUUXSTART-JOO v1.0.0 ###
+### TUUXSTART-JOO v1.2.0 ###
 
 Starter template for "localhost" development of Joomla/SASS theme with Gulp as task runner
 
