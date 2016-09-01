@@ -12,7 +12,7 @@ Starter template for "localhost" development of Joomla/SASS theme with Gulp as t
 
 First, download the master zip from GitHub or clone the repository, then go to Extension Manager in your Joomla admin panel and install the zip like any other Joomla theme.
 
-Open your command line tool on tuuxstart-joo theme folder (*by default `../templates/tuuxtar-joo`*)
+Open your command line tool on "tuuxstart-joo" theme folder, by default `../templates/tuuxtar-joo`
 
 Install dependencies
 ````
@@ -22,9 +22,12 @@ And run Gulp
 ````
 $ gulp
 ````
+
+#### TEMPLATE WORKFLOW ####
+
 `./sass/*` files compiles in `./css/style.css`
 
-#### TEMPLATE WORKFLOW & ENVIRONMENT: ####
+#### TEMPLATE ENVIRONMENT: ####
 
 1. [Gulp](http://gulpjs.com/)
 2. [gulp-sass](https://www.npmjs.com/package/gulp-sass)
