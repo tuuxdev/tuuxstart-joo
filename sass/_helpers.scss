@@ -15,7 +15,7 @@
 	flex-direction: column;
 }
 
-@mixin btn($color, $size, $radius, $border) {
+@mixin mx-btn($color, $size, $radius, $border) {
 	display: inline-block;
 	margin: 0px;
 	padding: .5em 1.2em;
@@ -30,27 +30,23 @@
 	border: $border solid $color;
 	outline: 0;
 	&:hover {
-		background-color: darken($color, 15%);
-		border-color: darken($color, 15%);
+		background-color: lighten($color, 10%);
+		border-color: lighten($color, 10%);
 		color: lighten($color, 95%);
 		cursor: pointer;
 	}
-}
-
-%btnm {
-	@include btn($theme, 1em, 4px, 2px);
 }
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.btnm {
-	@extend %btnm;
+.btn-mn {
+	@include mx-btn($theme, 1em, 4px, 2px);
 }
 
-.btng {
-	@extend %btnm;
+.btn-gt {
+	@include mx-btn($theme, 1em, 4px, 2px);
 	background: transparent;
 	color: $theme; //same as mixin variable
 }
