@@ -15,35 +15,44 @@
 	flex-direction: column;
 }
 
-%btn-main {
+@mixin btn($color, $size, $radius, $border) {
 	display: inline-block;
 	margin: 0px;
-	padding: 10px 15px;
-	font-size: 1em;
+	padding: .5em 1.2em;
+	font-size: $size;
+	font-weight: normal;
 	text-decoration: none;
 	text-align: center;
-	color: lighten($theme-color, 95%);
-	background-color: $theme-color;
-	transition: $main-transition;
-	border-radius: 5px;
-	border: 0;
+	color: lighten($color, 95%);
+	background-color: $color;
+	transition: $transition;
+	border-radius: $radius;
+	border: $border solid $color;
 	outline: 0;
 	&:hover {
-		background: darken($theme-color, 10%);
-		color: lighten($theme-color, 95%);
+		background-color: darken($color, 15%);
+		border-color: darken($color, 15%);
+		color: lighten($color, 95%);
 		cursor: pointer;
 	}
 }
 
-%btn-main-ghost {
-	@extend %btn-main;
-	background-color: transparent !important;
-	color: $theme-color;
-	border: 2px solid $theme-color;
-	&:hover {
-		background: $theme-color !important;
-		color: lighten($theme-color, 90%) !important;
-	}
+%btnm {
+	@include btn($theme, 1em, 4px, 2px);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btnm {
+	@extend %btnm;
+}
+
+.btng {
+	@extend %btnm;
+	background: transparent;
+	color: $theme; //same as mixin variable
 }
 
 .browserupgrade {
@@ -65,18 +74,4 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
-
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.btn-main {
-	@extend %btn-main;
-}
-
-.btn-main-ghost {
-	@extend %btn-main-ghost;
 }
