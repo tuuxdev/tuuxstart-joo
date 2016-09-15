@@ -19,23 +19,23 @@
 
 <body>
 	<!--[if gte IE 6 ]>
-  		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  
+  <?php// if ($this->countModules( '' )) : ?>
+  <?php// endif; ?>
 
-	  <?php// if ($this->countModules( '' )) : ?>
-		<?php// endif; ?>
-
-			<main class="st-main">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12" style="background: #F5F5F5; text-align:center;">
-							<jdoc:include type="message" />
-							<jdoc:include type="component" />
-							<jdoc:include type="modules" name="" style="xhtml" />
-						</div>
-					</div>
+	<main class="st-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" style="background: #F5F5F5; text-align:center;">
+						<jdoc:include type="message" />
+						<jdoc:include type="component" />
+						<jdoc:include type="modules" name="" style="xhtml" />
 				</div>
-			</main>
+			</div>
+		</div>
+	</main>
 </body>
 
 </html>
