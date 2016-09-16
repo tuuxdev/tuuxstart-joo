@@ -11,9 +11,9 @@
 }
 
 ::selection {
-	background: $theme-color;
+	background-color: $theme;
 	text-shadow: none;
-	color: lighten($theme-color, 40%);
+	color: lighten($theme, 40%);
 }
 
 body {
@@ -27,13 +27,13 @@ h3 {
 }
 
 a {
-	color: $theme-color;
-	transition: $main-transition;
+	color: $theme;
+	transition: $transition;
 	text-decoration: none;
 }
 
 a:hover {
-	color: darken($theme-color, 15%);
+	color: darken($theme, 15%);
 	text-decoration: none;
 }
 
