@@ -6,7 +6,6 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
 
 // Tasks sass
 gulp.task('sass', function () {
@@ -16,16 +15,8 @@ gulp.task('sass', function () {
 			outputStyle: 'expanded'
 		}))
 		.pipe(autoprefixer())
-		.pipe(sourcemaps.write(''))
 		.pipe(concat('style.css'))
-		.pipe(gulp.dest('./css'))
-		.pipe(cssnano({
-			autoprefixer: {
-				add: true
-			}
-		}))
-		.pipe(sourcemaps.write(''))
-		.pipe(concat('style.min.css'))
+		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./css'));
 });
 
