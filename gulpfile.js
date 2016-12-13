@@ -12,8 +12,8 @@ gulp.task('sass', function () {
 	return gulp.src(['./sass/main.scss'])
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			outputStyle: 'expanded'
-		}))
+			outputStyle: 'expanded'//outputStyle: nested - expanded - compact - compressed
+		}).on('error', sass.logError)) 
 		.pipe(autoprefixer())
 		.pipe(concat('style.css'))
 		.pipe(sourcemaps.write('.'))
